@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-urdu: "Noto Nastaliq Urdu", serif;
+  
+  --color-editorial-bg: #FDFBF7;
+  --color-editorial-text: #1A1A1A;
+  --color-editorial-accent: #8B4513;
+  --color-editorial-muted: #F5E6D3;
+  --color-editorial-gold: #E8A856;
+}
+
+body {
+  @apply bg-editorial-bg text-editorial-text antialiased;
+}
+
+.urdu-text {
+  font-family: "Noto Nastaliq Urdu", serif;
+  line-height: 2.2;
+}
+
+.serif-display {
+  font-family: "Playfair Display", serif;
+}
+
+.border-subtle {
+  border-color: rgba(26, 26, 26, 0.1);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
